@@ -19,7 +19,8 @@ public class Main {
         blocks.add(compositeBlock4);
         System.out.println(wall.findBlockByColor("white"));
         System.out.println(Arrays.toString(wall.findBlocksByMaterial("Paper").toArray()));
-        System.out.println(wall.count());
+        System.out.println(wall.toString());
+        System.out.println(compositeBlock0.getColor());
 
 
     }

@@ -14,17 +14,19 @@ public class Wall implements Structure {
         return blocks.size();
     }
 
+    //Zgodnie z zadaniem zwraca jeden blok w formie optionala
     @Override
     public Optional<Block> findBlockByColor(String color) {
         return blocks.stream()
                 .filter(block -> color.equalsIgnoreCase(block.getColor()))
                 .findFirst();
     }
+
+    //Zgodnie z zadaniem zwraca listę bloków o takim materiale
     @Override
     public List<Block> findBlocksByMaterial(String material) {
         return blocks.stream()
                 .filter(block -> material.equals(block.getMaterial()))
                 .collect(Collectors.toList());
     }
-
 }
