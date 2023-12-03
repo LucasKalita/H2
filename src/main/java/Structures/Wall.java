@@ -1,4 +1,4 @@
-package Implementations;
+package Structures;
 
 import Interfaces.Block;
 import Interfaces.Structure;
@@ -14,12 +14,20 @@ public class Wall implements Structure {
         this.blocks = blocks;
     }
 
+    /**
+     * Zwracanie wielkości Listy
+     * @return
+     */
     @Override
     public int count() {
         return blocks.size();
     }
 
-    //Zgodnie z zadaniem zwraca jeden blok w formie optionala
+    /**Zgodnie z zadaniem zwraca jeden blok w formie optionala
+     *
+     * @param color
+     * @return
+     */
     @Override
     public Optional<Block> findBlockByColor(String color) {
         return blocks.stream()
@@ -27,7 +35,11 @@ public class Wall implements Structure {
                 .findFirst();
     }
 
-    //Zgodnie z zadaniem zwraca listę bloków o takim materiale
+    /**Zgodnie z zadaniem zwraca listę bloków o takim materiale
+     *
+     * @param material
+     * @return
+     */
     @Override
     public List<Block> findBlocksByMaterial(String material) {
         return blocks.stream()

@@ -1,3 +1,7 @@
+package Interfaces;
+
+import Interfaces.Block;
+
 import java.util.List;
 import java.util.Optional;
 

@@ -1,4 +1,4 @@
-package Implementations;
+package Structures;
 
 import Interfaces.Block;
 import Interfaces.CompositeBlock;
@@ -6,12 +6,15 @@ import Interfaces.CompositeBlock;
 import java.util.ArrayList;
 import java.util.List;
 
-//Implementacja Composite block, stworzyłem ponieważ uznałem ze to będzie najlepszy sposób na implementacje getterów
+
+
 public class CompositeBlockImpl implements CompositeBlock {
     final String color;
     final String material;
     final List<Block> blocks;
-
+    /**
+    *Stworzyłem tą klasę ze względu na potrzebę operowania na obiekcie z polami gdzie mogę zaimplementować CompositeBlock
+     */
     public CompositeBlockImpl(String color, String material, List<Block> blocks) {
         this.color = color;
         this.material = material;

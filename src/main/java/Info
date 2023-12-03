@@ -5,10 +5,10 @@ zaimplementowanie metod:
 findBlockByColor,
 findBlocksByMaterial,
 count
-w klasie Wall - najchętniej unikając powielania kodu i umieszczając całą logikę w klasie Wall.
-Z uwzględnieniem w analizie i implementacji interfejsu CompositeBlock!
+w klasie Wall - najchętniej unikając powielania kodu i umieszczając całą logikę w klasie Structures.Wall.
+Z uwzględnieniem w analizie i implementacji interfejsu Interfaces.CompositeBlock!
 
-interface Structure {
+interface Interfaces.Structure {
 // zwraca dowolny element o podanym kolorze
 Optional<Block> findBlockByColor(String color);
 
@@ -23,7 +23,7 @@ public class Wall implements Structure {
 private List<Block> blocks;
 }
 
-interface Block {
+interface Interfaces.Block {
 String getColor();
 String getMaterial();
 }
