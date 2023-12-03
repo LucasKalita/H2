@@ -1,3 +1,8 @@
+package Implementations;
+
+import Interfaces.Block;
+import Interfaces.Structure;
+
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
